@@ -1,0 +1,116 @@
+@font-face {
+  font-family: Prompt;
+  src: url(../access/fonts/Prompt/Prompt-Regular.ttf);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.contanner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.card-wrap {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.card {
+  margin-right: 30px;
+  font-family: Prompt;
+  width: 200px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.6s;
+}
+.card:hover {
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1.1);
+}
+.image-card {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.name {
+  font-size: 18px;
+  margin: 20px 0px 0px;
+  cursor: pointer;
+}
+.detail {
+  font-size: 14px;
+  margin: 0px;
+  color: #b1aeae;
+}
+.price {
+  font-size: 20px;
+  color: #209f31;
+}
+
+.contanner-popup {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* The Modal (background) */
+.modal {
+  position: absolute;
+  padding: 20px;
+  display: none;
+  position: fixed;
+  overflow: auto;
+  background-color: rgba(244, 245, 225, 0.9);
+  border-radius: 16px;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  max-width: 400px;
+}
+
+/* Add Animation */
+.modal-content {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* The Close Button */
+.close {
+  font-family: Prompt;
+  position: absolute;
+  right: 30px;
+  color: rgb(8, 8, 8);
+  font-size: 24px;
+  transition: 0.3s;
+}
+.close:hover {
+  color: rgb(158, 154, 154);
+  text-decoration: none;
+  cursor: pointer;
+}
